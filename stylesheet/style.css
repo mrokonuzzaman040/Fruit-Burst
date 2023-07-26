@@ -1,0 +1,27 @@
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+.backgrounImage {
+    position: relative;
+    min-height: 50vh;
+    overflow: hidden;
+}
+
+.backgrounImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.backgrounImage {
+    background-image: url("./images/team.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
